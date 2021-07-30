@@ -7,8 +7,6 @@
 Neste curso foram utilizadas as seguintes tecnologias:
 
 - PHP;
-- HTML;
-- CSS;
 
 ## 💻 Curso
 
