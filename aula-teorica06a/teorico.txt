@@ -1,0 +1,37 @@
+| ENCAPSULAMENTO | Aula 06a 
+
+ 
+
+CONCEITO: Encapsular é ocultar partes independentes da implementação, permitindo construir partes invisíveis ao mundo exterior.
+
+///// "Um bom objeto encapsulado, possui uma interface bem definida." /////
+
+ 
+
+- INTERFACE: Lista de serviços fornecidos por um componente. É o contato com o mundo exterior, que define o que pode ser com um objeto dessa classe.
+
+ 
+
+!! IMPORTANTE !! Encapsular não é obrigatório, mas é uma boa prática para produzir Classes mais eficientes.
+
+ 
+
+VANTAGENS DE ENCAPSULAR:
+
+1 - Tornar mudanças invisíveis 
+
+2 - Facilitar a reutilização do código
+
+3 - Reduzir efeitos colaterais 
+
+ 
+
+OBSERVAÇÕES ¬
+
+	* Toda vez que encapsulamos, colocamos os atributos sempre em privados ou protegidos, mas nunca públicos.
+
+	* O ControleRemoto (classe) implemente um Controlador (interface) e todos os métodos abstratos que estão definidos no Controlador (interface) vão ser definidos como "não abstratos" no ControleRemoto (classe), inclusive a visibilidade e etc...
+
+	* Quando colocamos como "abstract" quer dizer que o código não será definido no local, mas em outro local/arquivo.
+
+_____________________________________________________________________________________
