@@ -11,15 +11,35 @@
 <body>
     <pre>
     <?php
-    require_once 'Caneta.php';
+    require_once 'ContaBanco.php';
 
-    $c1 = new Caneta("BIC", "Vermelha", 0.5);
+    $jubileu = new ContaBanco();
+    $creusa = new ContaBanco();
 
-    print_r($c1);
+    $jubileu->abrirConta("CC");
+    $jubileu->setNumConta(1010);
+    $jubileu->setDono("Jubileu");
 
-    /* $c1->setModelo("Faber Castell"); // Utilizar o set é muito mais seguro
-    $c1->setPonta(0.5); // Acessando via método eu posso acessar minha declaração privada
-    print "Eu tenho uma caneta {$c1->getModelo()}, de ponta {$c1->getPonta()}"; */
+    $creusa->abrirConta("CP");
+    $creusa->setNumConta(2020);
+    $creusa->setDono("Creusa");
+
+    $jubileu->depositar(300);
+    $creusa->depositar(500);
+
+    $creusa->sacar(100);
+
+    $jubileu->pagarMensalidade();
+    $creusa->pagarMensalidade();
+
+    $jubileu->sacar(338);
+    $creusa->sacar(530);
+
+    $jubileu->fecharConta();
+    $creusa->fecharConta();
+
+    print_r($jubileu);
+    print_r($creusa);
     ?>
     </pre>
 </body>
