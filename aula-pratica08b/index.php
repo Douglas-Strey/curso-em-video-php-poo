@@ -1,6 +1,7 @@
 <?php
 
-require_once 'Models/Lutador.php';
+require_once 'Lutador.php';
+require_once 'Luta.php';
 
 $lutador = array(5);
 
@@ -44,5 +45,25 @@ $lutador[3] = new Lutador(
     0,
     2
 );
-$lutador[4] = new Lutador();
-$lutador[5] = new Lutador();
+$lutador[4] = new Lutador(
+    "UFOCobol",
+    "Brasiliano",
+    37,
+    1.70,
+    119.3,
+    5,
+    4,
+    3
+);
+$lutador[5] = new Lutador(
+    "Nerdaart",
+    "Estadunidense",
+    30,
+    1.81,
+    105.7,
+    12,
+    2,
+    4
+);
+
+$UEC01 = new Luta();

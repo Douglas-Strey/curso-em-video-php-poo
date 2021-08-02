@@ -1,7 +1,6 @@
 <?php
 
-require_once 'Controller/ControleLutador.php';
-class Lutador implements ControleLutador
+class Lutador
 {
     private $nome;
     private $nacionalidade;
