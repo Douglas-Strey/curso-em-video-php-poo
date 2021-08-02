@@ -115,6 +115,7 @@ class Lutador implements ControleLutador
         $this->setDerrotas($derrota);
         $this->setEmpates($empate);
     }
+
     public function apresentar()
     {
         echo "Lutador: {$this->getNome()}.";
