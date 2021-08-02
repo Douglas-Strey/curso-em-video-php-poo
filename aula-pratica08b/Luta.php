@@ -28,6 +28,31 @@ class Luta
     }
     public function lutar()
     {
+        if ($this->aprovada) {
+            $this->desafiado->apresentar();
+            $this->desafiante->apresentar();
+            $vencedor = rand(0, 2);
+
+            switch ($vencedor) {
+                case 0: // Empates
+                    echo "<p>Empate!</p>";
+                    $this->desafiado->empatarLuta();
+                    $this->desafiante->empatarLuta();
+                    break;
+                case 1: //Desafiado Vence
+                    echo "<p>{$this->desafiado->getNome()} Venceu.</p>";
+                    $this->desafiado->ganharLuta();
+                    $this->desafiante->perderLuta();
+                    break;
+                case 2: //Desafiante Vence
+                    echo "<p>{$this->desafiante->getNome()} Venceu.</p>";
+                    $this->desafiado->perderLuta();
+                    $this->desafiante->ganharLuta();
+                    break;
+            }
+        } else {
+            echo "<p>Luta não pode acontecer...</p>";
+        }
     }
 
     // Getters
