@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Lutador.php';
+require_once 'Models/Lutador.php';
 
 $lutador = array(5);
 

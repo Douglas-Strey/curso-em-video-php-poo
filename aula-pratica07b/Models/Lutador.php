@@ -1,6 +1,6 @@
 <?php
 
-require_once 'ControleLutador.php';
+require_once 'Controller/ControleLutador.php';
 class Lutador implements ControleLutador
 {
     private $nome;
