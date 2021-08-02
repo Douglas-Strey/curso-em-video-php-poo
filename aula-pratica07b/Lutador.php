@@ -54,14 +54,17 @@ class Lutador implements ControleLutador
     {
         $this->nome = $nome;
     }
-    private function setNacionalidade()
+    private function setNacionalidade($nacion)
     {
+        $this->nacionalidade = $nacion;
     }
-    private function setIdade()
+    private function setIdade($idade)
     {
+        $this->idade = $idade;
     }
-    private function setAltura()
+    private function setAltura($altura)
     {
+        $this->altura = $altura;
     }
     private function setPeso($peso)
     {
