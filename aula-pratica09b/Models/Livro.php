@@ -80,21 +80,38 @@ class Livro implements Publicacao
 
     public function abrir()
     {
+        $this->aberto = true;
     }
 
     public function fechar()
     {
+        $this->aberto = false;
     }
 
     public function folhear($p)
     {
+        if ($p > $this->getTotPaginas()) {
+            $this->pagAtual = 0;
+        } else {
+            $this->pagAtual = $p;
+        }
     }
 
     public function avancarPage()
     {
+        if ($this->getPagAtual() > $this->getTotPaginas()) {
+            echo "<p>ERRO! Você não pode avançar para a próxima página pois essa que você está já é a ultima.</p>";
+        } else {
+            $this->pagAtual++;
+        }
     }
 
     public function voltarPage()
     {
+        if ($this->getPagAtual() < $this->getTotPaginas()) {
+            echo "<p>ERRO! Você não pode voltar a página pois essa que você está já é a primeira.</p>";
+        } else {
+            $this->pagAtual--;
+        }
     }
 }
