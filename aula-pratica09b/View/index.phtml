@@ -9,12 +9,20 @@
 </head>
 
 <body>
+    <pre>
     <?php
-    require_once 'Models/Livro.php';
-    require_once 'Models/Pessoa.php';
+    require 'Models/Livro.php';
+    require 'Models/Pessoa.php';
 
     $p[0] = new Pessoa("Pedro", 22, "M");
+    $p[1] = new Pessoa("Maria", 34, "F");
+
+    $l[0] = new Livro("As aventuras de Napoleão Bruchuchus", "Richard Murison", 437, $p[0]);
+    $l[1] = new Livro("Como saber se seu marido está mentindo pra você", "Ana Clara Ruche", 262, $p[1]);
+
+    print_r($l[0]);
     ?>
+    </pre>
 </body>
 
 </html>
