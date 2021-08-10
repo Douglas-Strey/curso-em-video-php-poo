@@ -1,0 +1,1 @@
+Polimorfismo é fazer uma determinada coisa com o mesmo nome e essa coisa poder agir de diferentes maneiras. 
