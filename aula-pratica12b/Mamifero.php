@@ -8,14 +8,17 @@ class Mamifero extends Animal
 
     public function locomover()
     {
+        echo "<p>EU TO CORRENDOOO</p>";
     }
     public function alimentar()
     {
+        echo "<p>Mamando.</p>";
     }
     public function emitirSom()
     {
+        echo "<p>MIAUUUUUUU.</p>";
     }
-
+    
     public function getCorPelo()
     {
         return $this->corPelo;
