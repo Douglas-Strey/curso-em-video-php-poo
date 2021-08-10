@@ -2,7 +2,7 @@
 
 require_once 'Animal.php';
 
-class Peixe extends Animal
+class Ave extends Animal
 {
     private $corEscama;
 
