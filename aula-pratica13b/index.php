@@ -11,6 +11,7 @@
 <body>
     <?php
     require_once 'Cachorro2.php';
+    require_once 'Lobo.php';
 
 
 
