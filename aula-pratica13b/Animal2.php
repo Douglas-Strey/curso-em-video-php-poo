@@ -1,6 +1,6 @@
 <?php
 
-abstract class Animal
+abstract class AnimalSecond
 {
     protected $peso, $idade, $membros;
 
