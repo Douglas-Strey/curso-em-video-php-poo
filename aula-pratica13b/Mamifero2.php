@@ -2,7 +2,7 @@
 
 require_once 'Animal2.php';
 
-class Mamifero2 extends AnimalSecond
+class MamiferoSecond extends AnimalSecond
 {
     protected $corPelo;
 
