@@ -10,7 +10,10 @@
 
 <body>
     <?php
-    
+    require_once 'Cachorro2.php';
+
+
+
     ?>
 </body>
 
