@@ -12,6 +12,7 @@
     <?php
     require_once 'Cachorro2.php';
     require_once 'Lobo.php';
+    require_once 'Mamifero2.php';
 
 
 
