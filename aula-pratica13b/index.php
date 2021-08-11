@@ -15,7 +15,6 @@
     require_once 'Mamifero2.php';
 
 
-
     ?>
 </body>
 
