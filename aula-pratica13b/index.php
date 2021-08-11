@@ -14,6 +14,7 @@
     require_once 'Lobo.php';
     require_once 'Mamifero2.php';
 
+    $l = new Lobo();
 
     ?>
 </body>
