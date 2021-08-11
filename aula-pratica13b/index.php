@@ -15,7 +15,7 @@
     require_once 'Mamifero2.php';
 
     $l = new Lobo();
-
+    $l->emitirSom();
     ?>
 </body>
 
