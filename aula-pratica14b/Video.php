@@ -46,4 +46,29 @@ class Video implements AcoesVideo
     {
         return $this->reproducao;
     }
+
+    public function setTitulo($titulo)
+    {
+        $this->titulo = $titulo;
+    }
+
+    public function setAvaliacao($avaliacao)
+    {
+        $this->avaliacao = $avaliacao;
+    }
+
+    public function setViews($views)
+    {
+        $this->views = $views;
+    }
+
+    public function setCurtida($curtida)
+    {
+        $this->curtida = $curtida;
+    }
+
+    public function setReproducao($reproducao)
+    {
+        $this->reproducao = $reproducao;
+    }
 }
