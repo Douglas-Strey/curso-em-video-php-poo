@@ -8,8 +8,8 @@ class Video implements AcoesVideo
     private $avaliacao;
     private $views;
     private $curtida;
-    private $reproduzindo;
-    
+    private $reproducao;
+
     public function play()
     {
     }
@@ -20,5 +20,30 @@ class Video implements AcoesVideo
 
     public function like()
     {
+    }
+
+    public function getTitulo()
+    {
+        return $this->titulo;
+    }
+
+    public function getAvaliacao()
+    {
+        return $this->avaliacao;
+    }
+
+    public function getViews()
+    {
+        return $this->views;
+    }
+
+    public function getCurtida()
+    {
+        return $this->curtida;
+    }
+
+    public function getReproducao()
+    {
+        return $this->reproducao;
     }
 }
