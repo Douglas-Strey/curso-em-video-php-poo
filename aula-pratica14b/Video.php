@@ -12,6 +12,7 @@ class Video implements AcoesVideo
 
     public function play()
     {
+        $this;
     }
 
     public function pause()
