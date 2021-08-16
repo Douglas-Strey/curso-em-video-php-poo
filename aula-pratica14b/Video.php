@@ -10,6 +10,15 @@ class Video implements AcoesVideo
     private $curtida;
     private $reproducao;
 
+    public function __construct($titulo)
+    {
+        $this->titulo = $titulo;
+        $this->avaliacao = 1;
+        $this->views = 0;
+        $this->curtida = 0;
+        $this->reproducao = false;
+    }
+
     public function play()
     {
         $this;
