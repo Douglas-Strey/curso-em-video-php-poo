@@ -31,4 +31,24 @@ abstract class Pessoa
     {
         return $this->experiencia;
     }
+
+    public function setNome($n)
+    {
+        $this->nome = $n;
+    }
+
+    public function setIdade($id)
+    {
+        $this->idade = $id;
+    }
+
+    public function setSexo($sex)
+    {
+        $this->sexo = $sex;
+    }
+
+    public function setExperiencia($xp)
+    {
+        $this->experiencia = $xp;
+    }
 }
