@@ -21,15 +21,17 @@ class Video implements AcoesVideo
 
     public function play()
     {
-        $this;
+        $this->reproducao = true;
     }
 
     public function pause()
     {
+        $this->reproducao = false;
     }
 
     public function like()
     {
+        $this->curtidas++;
     }
 
     public function getTitulo()
