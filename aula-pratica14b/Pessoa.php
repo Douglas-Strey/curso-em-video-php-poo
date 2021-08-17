@@ -7,9 +7,17 @@ abstract class Pessoa
     protected $sexo;
     protected $experiencia;
 
-    protected function ganharExp()
+    public function __construct($nome, $idade, $sexo)
     {
-        $this->experiencia++;
+        $this->nome = $nome;
+        $this->idade = $idade;
+        $this->sexo = $sexo;
+        $this->experiencia = 0;
+    }
+
+    protected function ganharExp($xp)
+    {
+        $this->experiencia += $xp;
     }
 
     public function getNome()
