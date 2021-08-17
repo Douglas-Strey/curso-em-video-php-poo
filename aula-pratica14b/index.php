@@ -11,7 +11,10 @@
 <body>
     <pre>
     <?php
-    require_once 'Video.php';
+    // Dessa forma se o objeto instanciar uma classe que tem o mesmo nome do arquivo, o require_once é feito automatico.
+    spl_autoload_register(function ($classNome) {
+        require_once $classNome . '.php';
+    });
 
     $v[0] = new Video("Aula Teórica 14a");
     $v[1] = new Video("Aula Prática 14b");
