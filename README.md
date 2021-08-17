@@ -1,6 +1,6 @@
-<!-- <p align="center">
+<p align="center">
  <img src="./assets/certificado-img.png" alt="template"  width="900px"/>
-</p> -->
+</p>
 
 ## 🚀 Tecnologias
 
