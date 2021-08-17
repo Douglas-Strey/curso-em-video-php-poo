@@ -19,4 +19,14 @@ class Gafanhoto extends Pessoa
     {
         $this->totAssistido++;
     }
+
+    public function getLogin()
+    {
+        return $this->login;
+    }
+
+    public function getTotAssistido()
+    {
+        return $this->totAssistido;
+    }
 }
