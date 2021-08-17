@@ -19,6 +19,9 @@
     $v[0] = new Video("Aula Teórica 14a");
     $v[1] = new Video("Aula Prática 14b");
 
+    $g[0] = new Gafanhoto("Jubileu", 22, "M", "juba");
+    $g[0] = new Gafanhoto("Creuza", 12, "F", "creuzita");
+
     print_r($v);
     ?>
     </pre>
