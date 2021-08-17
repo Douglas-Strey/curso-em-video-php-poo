@@ -8,9 +8,9 @@ class Visualizacao
     private $especator;
     private $filme;
 
-    public function __construct($especator, $filme)
+    public function __construct($espectador, $filme)
     {
-        $this->especator = $especator;
+        $this->espectador = $espectador;
         $this->filme = $filme;
     }
 
@@ -22,5 +22,15 @@ class Visualizacao
     public function getFilme()
     {
         return $this->filme;
+    }
+
+    public function setEspectador($espectador)
+    {
+        $this->espectador = $espectador;
+    }
+
+    public function setFilme($filme)
+    {
+        $this->filme = $filme;
     }
 }
