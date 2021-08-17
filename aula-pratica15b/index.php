@@ -22,6 +22,9 @@
     $g[0] = new Gafanhoto("Jubileu", 22, "M", "juba");
     $g[0] = new Gafanhoto("Creuza", 12, "F", "creuzita");
 
+    // Dessa maneira, dentro da calsse Visualizacao eu agrego a classe Gafanhoro a classe Video.
+    $vis[0] = new Visualizacao($g[0], $v[1]);
+
     print_r($v);
     ?>
     </pre>
